@@ -125,6 +125,7 @@
               <a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2020">Mediate 2020 (ICWSM)</a>
               <a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2021">Mediate 2021 (ICWSM)</a>
               <a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2022">Mediate 2022 (ICWSM)</a>
+              <a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2023">Mediate 2023 (ICWSM)</a>
              
             </div>
           </div>
@@ -249,16 +250,36 @@
   </section>
 
 
- <section id="schedule">
+<section id="schedule">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Schedule</h2>
-          <h3 class="mb-5">Coming Soon!</h3>
+          <!-- <h3 class="mb-5">Coming Soon!</h3> -->
+          Date & Time: <em class="font-weight-bold" id="confTime"></em>
+            <ul>
+	      <li class="nobul"><u id="lunch"></u> <b><em>Lunch, Registration and Networking</em></b></li>
+	      <li class="nobul"><u id="remarks"></u> <b><em>Opening Remarks</em></b></li>
+	      <li class="nobul"><u id="contributed1Time"></u> <b><em>Invited Talk 1</em></b></li>
+              <ul>
+		  <li class="nobul"><b>Prof. Kalina Bontcheva</b> <em> Generative AI and Disinformation: Recent Advances, Challenges, and Opportunities. </em></li>
+              </ul>
+	      <li class="nobul"><u id="contributed2Time"></u> <b><em>Invited Talk 2</em></b></li>
+              <ul>
+		  <li class="nobul"><b>Felix M Simon</b> <em> Putting Things in Perspective: Generative AI, Misinformation, and Threats to Democracy. </em></li>
+	      </ul>
+              <li class="nobul"><u id="coffeebreak"></u> <b><em>Invited Talk 3</em></b></li>
+              <li class="nobul"><u id="contributed3Time"></u> <b><em>Contributed Session 3 (10/6 min presentation for long/short papers + 3 min Q&A)</em></b></li>
+              <ul>
+		  <li class="nobul"><b>Andy Dudfield</b> <em> The impact of AI on Full Fact's fact checking. </em></li>
+              </ul>
+              <li class="nobul"><u id="panel"></u> <b><em>Panel Discussion</em></b></li>
+            </ul>
         </div>
       </div>
     </div>
   </section>
+
 
 
   <section id="callforpapers" class="bg-light">
@@ -361,49 +382,6 @@
           </div>
           <div class="col-md-4 col-lg-4 mb-0">
             <div class="px-4 text-center">
-              <img src="assets/elena.jpeg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                style="width: 200px;" alt="image">
-              <div class="pt-4 text-center">
-                <h5 class="title same-space">
-                  <span class="d-block mb-1">Elena <br /> Kochkina</span>
-                  <small class="h6 text-muted">Alan Turing Institute</small>
-                </h5>
-                <div class="mt-5">
-                  <a href="http://twitter.com/Elena_Kochkina" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="mailto:ekochkina@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-	</div>
-
-        <div class="row">
-          <div class="col-md-4 col-lg-4 mb-0">
-            <div class="px-4 text-center">
-              <img src="assets/marya.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                style="width: 200px;" alt="image">
-              <div class="pt-4 text-center">
-                <h5 class="title same-space">
-                  <span class="d-block mb-1">Marya <br /> Bazzi</span>
-                  <small class="h6 text-muted"> Alan Turing Institute, University of Warwick, sea.dev</small>
-                </h5>
-                <div class="mt-5">
-                  <a href="http://twitter.com/maryabazzi" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="mailto:mbazzi@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 mb-0">
-            <div class="px-4 text-center">
               <img src="assets/maria.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;" alt="image">
               <div class="pt-4 text-center">
@@ -468,20 +446,23 @@
   <!-- Localize confTime -->
   <script>
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var date = new Date('06/05/2022 07:00:00 AM EDT');
+    var date = new Date('25/03/2024 12:00:00 PM GMT');
     document.getElementById("confTime").innerHTML = months[date.getMonth()].concat(', ', date.getDate(), ' at ', (date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes(), ' (', Intl.DateTimeFormat().resolvedOptions().timeZone, ')');
-    var date = new Date('06/05/2022 07:05:00 AM EDT');
-    document.getElementById("GuillaumeTime").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('06/05/2022 07:45:00 AM EDT');
-    document.getElementById("contributed2Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('06/05/2022 07:30:00 AM EDT');
+    var date = new Date('25/03/2024 12:00:00 PM GMT');
+    document.getElementById("lunch").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
+    var date = new Date('25/03/2024 1:00:00 PM GMT');
+    document.getElementById("remarks").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
+    var date = new Date('25/03/2024 1:10:00 PM GMT');
     document.getElementById("contributed1Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('06/05/2022 8:35:00 AM EDT');
-    document.getElementById("JieboTime").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('06/05/2022 9:30:00 AM EDT');
+    var date = new Date('25/03/2024 2:00:00 PM GMT');
+    document.getElementById("contributed2Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
+    var date = new Date('25/03/2024 2:50:00 PM GMT');
+    document.getElementById("coffeebreak").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
+    var date = new Date('25/03/2024 3:10:00 PM GMT');
     document.getElementById("contributed3Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('06/05/2022 10:05:00 AM EDT');
-    document.getElementById("TanuTime").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
+var date = new Date('25/03/2024 4:00:00 PM GMT');
+    document.getElementById("panel").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
+  
   </script>
 </body>
 
