@@ -445,23 +445,22 @@
   <!-- Localize confTime -->
   <script>
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var date = new Date('25/03/2024 12:00:00 EDT');
+    var date = new Date('25/03/2024 12:00:00 GMT');
     document.getElementById("confTime").innerHTML = months[date.getMonth()].concat(', ', date.getDate(), ' at ', (date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes(), ' (', Intl.DateTimeFormat().resolvedOptions().timeZone, ')');
-    var date = new Date('25/03/2024 12:00:00 EDT');
+    var date = new Date('25/03/2024 12:00:00 GMT');
     document.getElementById("lunch").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('25/03/2024 13:00:00 EDT');
+    var date = new Date('25/03/2024 13:00:00 GMT');
     document.getElementById("remarks").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('25/03/2024 13:10:00 EDT');
+    var date = new Date('25/03/2024 13:10:00 GMT');
     document.getElementById("contributed1Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('25/03/2024 14:00:00 EDT');
+    var date = new Date('25/03/2024 14:00:00 GMT');
     document.getElementById("contributed2Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('25/03/2024 14:50:00 EDT');
+    var date = new Date('25/03/2024 14:50:00 GMT');
     document.getElementById("coffeebreak").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('25/03/2024 15:10:00 EDT');
+    var date = new Date('25/03/2024 15:10:00 GMT');
     document.getElementById("contributed3Time").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-    var date = new Date('25/03/2024 16:00:00 EDT');
+    var date = new Date('25/03/2024 16:00:00 GMT');
     document.getElementById("panel").innerHTML = ''.concat((date.getHours()<10?'0':''), date.getHours(), ':', (date.getMinutes()<10?'0':''), date.getMinutes());
-  
   </script>
 </body>
 
